@@ -6,6 +6,7 @@ html{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 h1, h2, p, span, a{
@@ -38,7 +39,7 @@ body{
   display: inline;
   outline: 0;
   border: 0;
-  cursor: pointer;
+
   will-change: box-shadow,transform;
   background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, var(--blue-color) 100% );
   box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
@@ -54,6 +55,7 @@ body{
 .prjt:hover{
   box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px var(--blue-color);
   transform: translateY(-2px);
+  cursor: pointer;
 }
 
 .prjt:active{
@@ -66,7 +68,7 @@ body{
   display: inline-flex;
   list-style-type: none;
   margin-right: 10px;
-  cursor: pointer;
+
 }
 
 .navbar{
@@ -213,7 +215,6 @@ a, a:visited, a:focus, a:link{
   display: inline-block;
   outline: 0;
   border: 0;
-  cursor: pointer;
   will-change: box-shadow,transform;
   background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, var(--blue-color) 100% );
   box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
@@ -292,7 +293,7 @@ a, a:visited, a:focus, a:link{
 .leftCards {
   opacity: 0;
   transform: translateX(-100%);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .leftCards.active {
@@ -302,7 +303,7 @@ a, a:visited, a:focus, a:link{
 
 .rightCards {
   transform: translateX(100%);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .rightCards.active {
