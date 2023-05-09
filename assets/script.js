@@ -63,3 +63,25 @@ function Position(obj){
 function openNewTab() {
   window.open("https://github.com/Guurido/Front-Insta");
 }
+
+// ANIMATION
+
+$(window).scroll(function() {
+  $('.leftCards').each(function() {
+    var position = $(this).offset().top;
+    var scrollPosition = $(window).scrollTop() + $(window).height();
+    if (scrollPosition > position) {
+      $(this).addClass('active');
+    }
+  });
+});
+
+$(window).scroll(function() {
+  $('.rightCards').each(function() {
+    var position = $(this).offset().top;
+    var scrollPosition = $(window).scrollTop() + $(window).height();
+    if (scrollPosition > position) {
+      $(this).addClass('active');
+    }
+  });
+});
