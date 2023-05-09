@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --font-color: #FFFFFF;
+  --bg-color: rgb(0,0,0);
+  --text-shadow: #1304a0;
+}
+
+body{
+  background: rgb(0,0,0);
+  background: linear-gradient(173deg, rgba(0,0,0,1) 31%, rgba(9,9,121,1) 100%);
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.hyperliens{
+  display: inline-flex;
+  list-style-type: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.navbar{
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  background: var(--bg-color);
+  align-items: center;
+  width: -webkit-fill-available;
+  transition: 0.3s;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  animation: slide-down 0.7s;
+}
+
+@keyframes slide-down{
+  from{
+      margin-top: -100%;
+  }
+  to{
+      margin-bottom: 100%;
+  }
+}
+
+.drapeau{
+  height: 28px;
+  width: 25px;
+}
+
+.drapeau:hover{
+  opacity: 80%;
+}
+
+.flag2{
+  margin-right: -17px;
+}
+
+.navbar:hover{
+  transition: 0.3s;
+}
+
+
+.logo{
+  height: 115px;
+}
+
+a, a:visited, a:focus, a:link{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-right: 15px;
+}
+
+.navbarLinks{
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-right: 15px;
+}
+
+.navbarLinks:hover{
+  --color: #FFFFFF;
+  --position: center bottom;
+  --width: 40px;
+  --height: 3px;
+  padding-bottom: 5px;
+  background: linear-gradient(var(--color), var(--color)) var(--position) / var(--width) var(--height) no-repeat;
+}
+
+.svgBurger{
+  height: 42px;
+  width: 59px;
+  display: none;
+}
+/* FIN NAVBAR */
+
+/* TITRE */
+.titleContainer {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.title {
+  font-weight: 800;
+  color: transparent;
+  font-size: 7.5rem;
+  background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  position: relative;
+  text-align: center;
+  line-height: 90px;
+  letter-spacing: -8px;
+}
+
+.subtitle {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
+
+/*FIN TITRE */
+
+.titreCat{
+  color: #FFFFFF;
+  text-shadow: 0 0 5px var(--text-shadow), 0 0 10px var(--text-shadow), 0 0 15px var(--text-shadow), 0 0 20px var(--text-shadow), 0 0 30px var(--text-shadow), 0 0 40px var(--text-shadow), 0 0 55px var(--text-shadow), 0 0 75px var(--text-shadow);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#wai{
+  padding: 38px;
+  border-radius: 70px;
+  background: rgb(0,0,0);
+  background: linear-gradient(153deg, rgba(0,0,0,1) 74%, rgba(9,9,121,1) 100%);
+  -webkit-box-shadow: -2px 3px 21px 10px #000000; 
+  box-shadow: -2px 3px 21px 10px #000000;
+}
+
+.container{
+  margin-top: 670px;
+  background-image: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg");
+  padding: 125px;
+}
+
+.containerAbout{
+  display: flex;
+}
+
+.pp{
+  height: 297px;
+  width: 284px;
+  margin-right: 20px;
+}
+
+.txt-aPropos{
+  color: #FFFFFF;
+}
+
+/* MEDIAS QUERYS */
+
+@media only screen and (max-width: 1173px) { 
+  .svgBurger{
+      display: flex!important;
+  }
+  .txtLI{
+      display: none!important;
+  }
+  #wai{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+  .containerAbout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .pp {
+    height: 297px;
+    width: 226px;
+    margin-bottom: 25px;
+  }
+  .txt-aPropos {
+    color: #FFFFFF;
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 500px) { 
+  #wai{
+    width: 220px;
+  }
+}
+
+/* FIN MEDIAS QUERYS */
